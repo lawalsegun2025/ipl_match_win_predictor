@@ -22,6 +22,13 @@ Based on the first innings performance of a team, this app takes in current data
 
 ## Problem Solving Steps
 
+1. Load the Dataset into a pandas Data frame
+2. Perform Exploratory Data Analysis on the data
+3. Feature Engineering: Extract new features
+4. Fit a Machine Learning Pipeline on the extracted data
+5. Integrate the Pipeline with the User Interface which is created using Streamlit
+6. Deploy the model on a cloud service
+
 ## Source of Dataset
 
 ## Data Cleaning Techniques
