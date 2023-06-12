@@ -31,6 +31,11 @@ Based on the first innings performance of a team, this app takes in current data
 
 ## Source of Dataset
 
+The dataset consist of data about IPL matches played from the year 2008 to 2019. The sources of the data sets are from;
+* Data source from 2008-2017 - [CricSheet.org and Manas - Kaggle](https://cricsheet.org/)
+* Data source for 2018-2019 - [IPL T20 - Official website](https://www.iplt20.com/)
+
+
 ## Data Cleaning Techniques
 
 ## Exploratory Data Analysis
