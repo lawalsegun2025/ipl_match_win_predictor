@@ -14,7 +14,7 @@
 
 ## Overview
 
-<img src="img/">
+<img src="img/ipl_logo.png">
 
 ## Motivation
 
