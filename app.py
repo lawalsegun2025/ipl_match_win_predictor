@@ -22,6 +22,8 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
 
 # load the trained model
 pipe = pickle.load(open("pipe.pkl", "rb"))
+
+# Title
 st.title("IPL Team Win Probability Predictor")
 
 col_1, col_2 = st.columns(2)
@@ -71,3 +73,13 @@ input_df = pd.DataFrame({
     'cur_run_rate': [current_run_rate], 
     'req_run_rate': [required_run_rate]
 })
+
+# make predictions and get prediction probabilities
+result = pipe.predict_proba(input_df)
+loss_prob = result[0][0]
+win_prob = result[0][1]
+
+# Output
+st.header(batting_team+" The batting team has "+str(round(win_prob*100))+"%"+ " chance of winning")
+
+st.header(bowling_team+" The bowling team has "+str(round(loss_prob*100))+"%"+ " chace of winning")
