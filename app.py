@@ -50,3 +50,11 @@ with col_4:
 
 with col_5:
     wickets = st.input_number("Wicket Fallen")
+
+if st.button("Predict Probability"):
+
+    runs_left = target - score 
+    balls_left = 120 - (overs * 6)
+    wickets = 10 - wickets 
+    current_run_rate = score / overs
+    required_run_rate = (runs_left * 6) / balls_left
