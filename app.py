@@ -58,3 +58,16 @@ if st.button("Predict Probability"):
     wickets = 10 - wickets 
     current_run_rate = score / overs
     required_run_rate = (runs_left * 6) / balls_left
+
+# get the input data into a dataframe
+input_df = pd.DataFrame({
+    'batting_team': [batting_team], 
+    'bowling_team': [bowling_team], 
+    'city': [city], 
+    'runs_left': [runs_leftt], 
+    'balls_left': [balls_left],
+    'wickets': [wickets], 
+    'total_runs_x': [target], 
+    'cur_run_rate': [current_run_rate], 
+    'req_run_rate': [required_run_rate]
+})
