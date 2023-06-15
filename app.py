@@ -23,3 +23,11 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
 # load the trained model
 pipe = pickle.load(open("pipe.pkl", "rb"))
 st.title("IPL Team Win Probability Predictor")
+
+col_1, col_2 = st.columns(2)
+
+with col_1:
+    batting_team = st.selectbox("Select the batting team", sorted(teams))
+
+with col_2:
+    bowling_team = st.selectbox("Select the bowling team", sorted(teams))
