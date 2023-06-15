@@ -61,25 +61,25 @@ if st.button("Predict Probability"):
     current_run_rate = score / overs
     required_run_rate = (runs_left * 6) / balls_left
 
-# get the input data into a dataframe
-input_df = pd.DataFrame({
-    'batting_team': [batting_team], 
-    'bowling_team': [bowling_team], 
-    'city': [city], 
-    'runs_left': [runs_left], 
-    'balls_left': [balls_left],
-    'wickets': [wickets], 
-    'total_runs_x': [target], 
-    'cur_run_rate': [current_run_rate], 
-    'req_run_rate': [required_run_rate]
-})
+    # get the input data into a dataframe
+    input_df = pd.DataFrame({
+        'batting_team': [batting_team], 
+        'bowling_team': [bowling_team], 
+        'city': [city], 
+        'runs_left': [runs_left], 
+        'balls_left': [balls_left],
+        'wickets': [wickets], 
+        'total_runs_x': [target], 
+        'cur_run_rate': [current_run_rate], 
+        'req_run_rate': [required_run_rate]
+    })
 
-# make predictions and get prediction probabilities
-result = pipe.predict_proba(input_df)
-loss_prob = result[0][0]
-win_prob = result[0][1]
+    # make predictions and get prediction probabilities
+    result = pipe.predict_proba(input_df)
+    loss_prob = result[0][0]
+    win_prob = result[0][1]
 
-# Output
-st.header(batting_team+" The batting team has "+str(round(win_prob*100))+"%"+ " chance of winning")
+    # Output
+    st.header(batting_team+" The batting team has "+str(round(win_prob*100))+"%"+ " chance of winning")
 
-st.header(bowling_team+" The bowling team has "+str(round(loss_prob*100))+"%"+ " chace of winning")
+    st.header(bowling_team+" The bowling team has "+str(round(loss_prob*100))+"%"+ " chace of winning")
