@@ -66,7 +66,7 @@ input_df = pd.DataFrame({
     'batting_team': [batting_team], 
     'bowling_team': [bowling_team], 
     'city': [city], 
-    'runs_left': [runs_leftt], 
+    'runs_left': [runs_left], 
     'balls_left': [balls_left],
     'wickets': [wickets], 
     'total_runs_x': [target], 
