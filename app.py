@@ -36,3 +36,17 @@ with col_2:
 city = st.select(
     "Select the city where the match is being played", sorted(cities)
 )
+
+# input target
+target = st.number_input("Target")
+
+col_3, col_4, col_5 = st.columns(3)
+
+with col_3:
+    score = st.number_input("Current Score")
+
+with col_4:
+    overs = st.number_input("Overs Completed")
+
+with col_5:
+    wickets = st.input_number("Wicket Fallen")
