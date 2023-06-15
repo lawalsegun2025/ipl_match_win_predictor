@@ -35,7 +35,7 @@ with col_2:
     bowling_team = st.selectbox("Select the bowling team", sorted(teams))
 
 # Get the citites
-city = st.select(
+city = st.selectbox(
     "Select the city where the match is being played", sorted(cities)
 )
 
