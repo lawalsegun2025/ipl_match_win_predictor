@@ -51,6 +51,8 @@ The following steps were taken for the data analysis;
 - The total runs for the first innings in the data set was extracted
 - The two dataframe were merged
 - We got the `current_score` by a cumulative sum of the total runs for the second innings.
+- We created a `result` column to identify the winners.
+
 
 ## Model Building
 
