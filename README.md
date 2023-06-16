@@ -40,6 +40,8 @@ The dataset consist of data about IPL matches played from the year 2008 to 2019.
 
 ## Data Cleaning Techniques
 
+For the teams, Only the most frequent participating teams were uesed for the analysis, while old team names were replaced with theire respective curreent names.
+
 ## Exploratory Data Analysis
 
 ## Model Building
