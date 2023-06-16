@@ -56,9 +56,12 @@ The following steps were taken for the data analysis;
 
 Only Important columns in the data set was used to build the model. This columns were selected based on domain knowledge and expertise in the subject matter.
 
-To models were trained Logistic Regression and RandomForest Classifier.
+Two models were trained Logistic Regression and RandomForest Classifier.
+
 Although the RansomForestClassifier model had a better accuracy (0.9992991800406475)
-than th Logistic Regression model (accuracy = 0.8063634452309202), we decided to go with the Logistic Regression for this project. This is because the Logistic Regression performed better for the task on the prediction probability. For example f Logistic regression prediction probability or a given sample was [0.54477506, 0.45522494], this means 54% and 45% win probability for each team. While the Random Forest prediction probability for the same sample was [0.05, 0.95] that is 5% chance for one team and 95% chance for the other team. 
+than th Logistic Regression model (accuracy = 0.8063634452309202), we decided to go with the Logistic Regression for this project. 
+
+This is because the Logistic Regression performed better for the task on the prediction probability. For example f Logistic regression prediction probability or a given sample was [0.54477506, 0.45522494], this means 54% and 45% win probability for each team. While the Random Forest prediction probability for the same sample was [0.05, 0.95] that is 5% chance for one team and 95% chance for the other team. 
 
 Therefore it is better to use a model which gives "Equal Justice" towards both sides as we do not know which team will out perform and win the game in the second inning!
 
