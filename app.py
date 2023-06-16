@@ -82,4 +82,4 @@ if st.button("Predict Probability"):
     # Output
     st.header(batting_team+" The batting team has "+str(round(win_prob*100))+"%"+ " chance of winning")
 
-    st.header(bowling_team+" The bowling team has "+str(round(loss_prob*100))+"%"+ " chace of winning")
+    st.header(bowling_team+" The bowling team has "+str(round(loss_prob*100))+"%"+ " chance of winning")
