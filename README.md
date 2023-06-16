@@ -14,6 +14,8 @@
 
 ## Overview
 
+Indian Premier League (IPL) is a Twenty20 cricket format league in India. It is usually played in April and May every year. As of 2019, the title sponsor of the game is Vivo. The league was founded by Board of Control for Cricket India (BCCI) in 2008
+
 Based on the first innings performance of a team, this app takes in current data of second innings and predicts the win probability of the two teams. </br></br>
 
 <img src="img/ipl_logo.png">
