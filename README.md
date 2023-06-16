@@ -9,7 +9,6 @@
 * [Exploratory Data Analysis](#exploratory-data-analysis)
 * [Model Building and Performance](#model-building-and-performance)
 * [Deployment](#deployment)
-* [Future scope of project](#future-scope-of-project)
 
 ## Overview
 
@@ -67,4 +66,6 @@ Therefore it is better to use a model which gives "Equal Justice" towards both s
 
 ## Deployment
 
-## Future scope of project
+The model was deployed on Streamit Cloud
+
+
