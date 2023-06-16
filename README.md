@@ -46,6 +46,9 @@ The dataset consist of data about IPL matches played from the year 2008 to 2019.
 
 ## Exploratory Data Analysis
 
+The following steps were taken for the data analysis
+- 
+
 ## Model Building
 
 ## Model Performance
