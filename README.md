@@ -41,13 +41,16 @@ The dataset consist of data about IPL matches played from the year 2008 to 2019.
 ## Data Cleaning Techniques
 
 - For the teams, only the most frequent participating teams were uesed for the analysis, while old team names were replaced with theire respective curreent names.
-- The two data sets were merged on th 1`match_id` column to enhace data analysis.
+- Match entries that were interrupted were dropped
+- The two data sets were merged on the `match_id` column to enhace data analysis.
 - New features like `current_score`, `runs_left`, `balls_left`, `players_dismmised` etc were created to improve the model performance.
 
 ## Exploratory Data Analysis
 
-The following steps were taken for the data analysis
-- 
+The following steps were taken for the data analysis;
+- The total runs for the first innings in the data set was extracted
+- The two dataframe were merged
+- We got the `current_score` by a cumulative sum of the total runs for the second innings.
 
 ## Model Building
 
